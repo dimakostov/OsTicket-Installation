@@ -11,11 +11,22 @@ In this lab, I install osTicket from the ground up using the necessary installat
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop Connection
 - Internet Information Services (IIS)
-- MySQL
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10 Pro</b> (21H2)
+
+<h2>List of Prerequisites</h2>
+
+- Azure Virtual Machine
+- Internet Information Services (IIS)
+- PHP Manager
+- Rewrite Module
+- VC Redist
+- MySQL
+- Heidi SQL
+- osTicket v1.15.8
+- Link to downloads: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 
 
 <h2>Installation Steps</h2>
