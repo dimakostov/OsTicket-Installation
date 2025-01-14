@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/94648995-696b-49ac-a5a7-06206f2100ce)<p align="center">
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
