@@ -14,7 +14,7 @@ In this lab, I install osTicket from the ground up using the necessary installat
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10 Pro</b> (21H2)
+- Windows 10 Pro</b>
 
 <h2>List of Prerequisites</h2>
 
