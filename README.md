@@ -25,7 +25,7 @@ In this lab, I install osTicket from the ground up using the necessary installat
 - VC Redist
 - MySQL
 - Heidi SQL
-- osTicket v1.15.8
+- osTicket
 - Link to downloads: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 
 
