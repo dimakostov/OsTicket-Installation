@@ -31,10 +31,10 @@ In this lab, I install osTicket from the ground up using the necessary installat
 
 <h2>Installation Steps</h2>
 
-<p>
+
 ![image](https://github.com/user-attachments/assets/b05f7e63-75be-4b56-91ca-bde9a3b27eef)
 
-</p>
+
 <p>
 Before installing any files, Internet Information Services (IIS) needs to be enabled. We are installing osTicket locally and it needs IIS in order to function. To turn on IIS, open the Control Panel. From the Control Panel, open Programs and and Turn Windows Features On or Off. Within this menu, expand Internet Information Services, expand Web Management Tools and enable IIS Management Console. Click and expand World Wide Web Services and expand Application Development Features. In Application Development Features, enable CGI and click ok to confirm.
 </p>
