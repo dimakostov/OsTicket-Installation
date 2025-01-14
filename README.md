@@ -47,87 +47,85 @@ After enabling IIS, download and install PHP Manager for IIS (PHPManagerforIIS_V
 </p>
 <br />
 
-![image](https://github.com/user-attachments/assets/4b88ce37-1fcd-48ae-ae1b-55e804f2e725)
-
+![image](https://github.com/user-attachments/assets/971acfda-914c-47b3-a1e6-97a0d3d05204)
 
 <p>
 After installing the Rewrite Module, create a new folder/directory called C:\PHP on the Windows (C:) drive. This new folder will be used to unzip the contents from the PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) zip folder downloaded from the installation files. Extract all contents from the zip folder into the C:\PHP folder.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/mYKZExi.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/eee3b6bb-dc38-47df-92d3-913958544161)
+
 <p>
 Next, download and install VC_redist.x86.exe from the installation files.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/UW2eIpW.png" height="80%" width="80%" alt="Installation Steps"/>
+![image](https://github.com/user-attachments/assets/0c0d9351-8240-4c9b-ae3b-8f74fd8dd07d)
+
 </p>
 <p>
 Next, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installation files. Within the MySQL setup wizard, click "I agree" and select a Typical install and Install. Launch the Configuration Wizard after the installation. Select Standard Configuration and select Install As Windows Service and make sure Launch the MySQL Server automatically is checked. For credentials, the username will be root and the password is Password1. In a practical setting, the credentials will be more secure so that they are not easily guessed. For the purposes of this lab, the standard credentials (root and Password1) will do.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/9ylqXGk.png" height="80%" width="80%" alt="Installation Steps"/>
-<img src="https://i.imgur.com/KoK1Lug.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/82f1468f-4233-4086-81dc-517cc35c0330)
+
+![image](https://github.com/user-attachments/assets/45eb0db2-a886-402a-b152-36566c5f1659)
+
 <p>
 Before installing osTicket, configurations need to be made within IIS. Open IIS as an admin and select PHP Manager. Within PHP Manager, select Register new PHP version. Select Browse and select the PHP CGI executable file (php-cgi.exe) within the PHP folder created earlier in the lab. After registering the PHP version, reload the IIS server within the management console.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/ivQmua0.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/e68ab546-50fe-4aec-bd3c-16f5cc8944fa)
+
 <p>
 From the installation files, download osTicket v1.15.8. Extract and copy the "upload" folder to the following path: c:\inetpub\wwwroot. Within the c:\inetpub\wwwroot folder, rename "upload" to "osTicket." Reload the IIS server afterwards.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/s856Cpz.png" height="80%" width="80%" alt="Installation Steps"/>
-<img src="https://i.imgur.com/pNkLVo6.png" height="80%" width="80%" alt="Installation Steps"/>
-<img src="https://i.imgur.com/Mpq7ybU.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/7eda5a86-0ffe-4797-ade6-ca0074aaf62f)
+
+![image](https://github.com/user-attachments/assets/0830f9e8-327b-41a1-9fd3-3378a44a284f)
+
+![image](https://github.com/user-attachments/assets/e6a59a09-28dd-4a36-8cb9-c54aad4dd186)
+
 <p>
 Within the IIS console, browse to Sites -> Default -> osTicket. Click "Browse *:80" and the installation page for osTicket will now show up. Some extensions are not enabled and they will be enabled with the IIS console before installing osTicket. To do so, click on PHP Manager while in the osTicket menu in IIS. Click on "Enable or disable an extension." Enable the following extentions: php_imap.dll, php_intl.dll, php_opcache.dll.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/CdkPTsv.png" height="80%" width="80%" alt="Installation Steps"/>
-<img src="https://i.imgur.com/5ggnkk9.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/77b09c36-fec4-4c00-ad95-dc54e546d0b8)
+
+![image](https://github.com/user-attachments/assets/0c844d5a-7ba9-47a6-890a-e99d1267f50d)
+
 <p>
 Before continuing to install osTicket, a file needs to be renamed as well as have its permissions changed. From C:\inetpub\wwwroot\osTicket\include, rename ost-sampleconfig.php to ost-config.php. The newly named ost-config.php will have its permissions changed. Open its Properties and change the following permissions: Disable inheritence -> Remove All and New Permissions -> Everyone -> All.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/zExrqYG.png" height="80%" width="80%" alt="Installation Steps"/>
-<img src="https://i.imgur.com/PiJMYZ6.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/b5c69067-bf59-40e8-95d9-3c6d490a7e66)
+
+![image](https://github.com/user-attachments/assets/b2d1c6c6-02a2-47bd-b5c5-c903cd51018d)
+
 <p>
 From the installation files, download and install HeidiSQL. Create a new session with HeidiSQL and enter the password used in the installation of MySQL earlier. Within the new session, right-click on Unnamed and create a new database named osTicket. 
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/gOqjR1k.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/b513fe74-2f71-402d-85b3-14ef495a3ab1)
+
 <p>
 Within osTicket browser window, enter the necessary details to set up osTicket. For the MySQL database, use the credentials used for MySQL and HeidiSQL.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/3nczMAD.png" height="80%" width="80%" alt="Installation Steps"/>
-<img src="https://i.imgur.com/7V2YmH6.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/5e27ce3c-3291-4073-b965-00bf0ae8562f)
+
+![image](https://github.com/user-attachments/assets/fb286a39-a115-42da-861c-291e18dd5a92)
+
 <p>
 After everything is done, osTicket should now be installed! Before continuing to use osTicket, some clean up has to be done. First, delete the setup folder found in C:\inetpub\wwwroot\osTicket. Next, return to C:\inetpub\wwwroot\osTicket\include and change the permissions of the ost-config.php file. The file should no longer have full access to Everyone. Revert the permissions to "Read" only. 
 </p>
