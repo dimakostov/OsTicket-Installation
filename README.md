@@ -1,4 +1,4 @@
-<p align="center">
+![image](https://github.com/user-attachments/assets/94648995-696b-49ac-a5a7-06206f2100ce)<p align="center">
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
@@ -40,17 +40,16 @@ Before installing any files, Internet Information Services (IIS) needs to be ena
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/RB5YByC.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/9f9f8bdf-fb8f-4734-aed9-8b570c5ace33)
+
 <p>
 After enabling IIS, download and install PHP Manager for IIS (PHPManagerforIIS_V1.5.0.msi) from the installtion files folder. Download and install the Rewrite Module (rewrite_amd64_en-US.msi) after installing PHP Manager for IIS.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/neliVrg.png" height="80%" width="80%" alt="Installation Steps"/>
-</p>
+![image](https://github.com/user-attachments/assets/4b88ce37-1fcd-48ae-ae1b-55e804f2e725)
+
+
 <p>
 After installing the Rewrite Module, create a new folder/directory called C:\PHP on the Windows (C:) drive. This new folder will be used to unzip the contents from the PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) zip folder downloaded from the installation files. Extract all contents from the zip folder into the C:\PHP folder.
 </p>
